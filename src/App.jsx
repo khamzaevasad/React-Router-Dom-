@@ -1,31 +1,35 @@
+import './App.css';
+
 import {
   createBrowserRouter,
-  Route,
   createRoutesFromElements,
+  Route,
   RouterProvider,
 } from 'react-router-dom';
-import './App.css';
-import About from './pages/About';
-import Contact from './pages/Contact';
 import Home from './pages/Home';
+import About from './pages/About';
 import RootLayout from './layout/RootLayout';
-
-function App() {
+import ContactLayout from './layout/ContactLayout';
+import Faq from './pages/help/Faq';
+import Form from './pages/help/Form';
+const App = () => {
   const routes = createBrowserRouter(
     createRoutesFromElements(
-      <Route element={<RootLayout />}>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
+      <Route path="/" element={<RootLayout />}>
+        <Route index element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="contact" element={<ContactLayout />}>
+          <Route path="faq" element={<Faq />} />
+          <Route path="form" element={<Form />} />
+        </Route>
       </Route>
     )
   );
-
   return (
     <div className="App">
       <RouterProvider router={routes} />
     </div>
   );
-}
+};
 
 export default App;

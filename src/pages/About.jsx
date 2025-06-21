@@ -3,12 +3,11 @@ const About = () => {
     <div>
       <h1>About</h1>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt quae
-        cumque sed tempore distinctio officia ex quos! Sint ipsam vero
-        doloremque delectus dicta veritatis impedit id iste neque minima aut
-        minus velit deserunt veniam placeat suscipit incidunt, consequuntur, sed
-        doloribus cum reiciendis ducimus quaerat fuga! Inventore omnis vitae
-        necessitatibus sint?
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, at in
+        dignissimos consequuntur vitae voluptate illo tenetur numquam quia sunt,
+        non optio eligendi. Quam error odio dignissimos cumque alias nisi porro
+        id repellendus doloribus, aut ut accusamus est, inventore voluptatibus
+        atque tempore nemo dicta cum? Fuga molestias eum nam ad!
       </p>
     </div>
   );
