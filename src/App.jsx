@@ -12,6 +12,7 @@ import RootLayout from './layout/RootLayout';
 import ContactLayout from './layout/ContactLayout';
 import Faq from './pages/help/Faq';
 import Form from './pages/help/Form';
+import PageNotFound from './pages/PageNotFound';
 const App = () => {
   const routes = createBrowserRouter(
     createRoutesFromElements(
@@ -22,6 +23,9 @@ const App = () => {
           <Route path="faq" element={<Faq />} />
           <Route path="form" element={<Form />} />
         </Route>
+
+        {/* page not found */}
+        <Route path="*" element={<PageNotFound />}></Route>
       </Route>
     )
   );
